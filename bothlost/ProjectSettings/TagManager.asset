@@ -17,6 +17,7 @@ TagManager:
   - Slot
   - rabbit
   - meatRabbit
+  - rabbitmeat
   layers:
   - Default
   - TransparentFX

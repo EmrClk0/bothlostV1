@@ -13,7 +13,7 @@ public class SelectionManager : MonoBehaviour
     public TextMeshProUGUI info_subtext;
 
     public Image crosshair;
-    private string[] allowedHitTags = { "tree", "rock" , "branch","meatRabbit","rabbit" };
+    private string[] allowedHitTags = { "tree", "rock" , "branch","rabbitmeat","rabbit" };
 
     private bool onTarget;
     private RaycastHit hit;
