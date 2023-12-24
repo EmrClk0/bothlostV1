@@ -40,14 +40,27 @@ public class CollectableItems : MonoBehaviour
            // info_subtext.text = "press e to collect";
   
             SelectionManager.instance.setCrosshairTextSubtext(sprite,tagName.ToLower(), "press e to collect");
+
+            Debug.Log("press e to collect");
             if (Input.GetKey(KeyCode.E))
             {
-                 Debug.Log(tagName + " envanterdsdse alndý");
-                 
-                  // envantere ekleme sistemi yeri
+                if (!Inventory.Instance.CheckIfFull())
+                {
+                    Inventory.Instance.AddToInventory(tagName);
 
-                Destroy(gameObject);
+                    Debug.Log(tagName + " envanterdsdse alndý");
+
+                    // envantere ekleme sistemi yeri
+
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    Debug.Log("Inventory is full");
+                }
+
             }
+
 
 
         }
