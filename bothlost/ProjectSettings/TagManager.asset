@@ -14,6 +14,9 @@ TagManager:
   - mainCanvas
   - tag
   - fire
+  - Slot
+  - rabbit
+  - meatRabbit
   layers:
   - Default
   - TransparentFX

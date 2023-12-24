@@ -44,20 +44,21 @@ public class CollectableItems : MonoBehaviour
             Debug.Log("press e to collect");
             if (Input.GetKey(KeyCode.E))
             {
-                if (!Inventory.Instance.CheckIfFull())
-                {
-                    Inventory.Instance.AddToInventory(tagName);
+                
+                 if (!Inventory.Instance.CheckIfFull())
+                 {
+                     Inventory.Instance.AddToInventory(tagName);
 
-                    Debug.Log(tagName + " envanterdsdse alndý");
+                     Debug.Log(tagName + " envanterdsdse alndý");
 
-                    // envantere ekleme sistemi yeri
+                     // envantere ekleme sistemi yeri
 
-                    Destroy(gameObject);
-                }
-                else
-                {
-                    Debug.Log("Inventory is full");
-                }
+                     Destroy(gameObject);
+                 }
+                 else
+                 {
+                     Debug.Log("Inventory is full");
+                 }
 
             }
 
