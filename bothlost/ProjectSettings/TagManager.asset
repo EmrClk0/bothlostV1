@@ -18,6 +18,7 @@ TagManager:
   - rabbit
   - meatRabbit
   - rabbitmeat
+  - campfire
   layers:
   - Default
   - TransparentFX

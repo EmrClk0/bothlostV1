@@ -91,6 +91,7 @@ public class PlayerState : MonoBehaviour
         if (isPlayerNearToFire && currentFreezing >0) //ISINMA 
         {
             //StartCoroutine(decreaseCurrentFreezing());
+            
             currentFreezing -= 0.007f;
 
 
